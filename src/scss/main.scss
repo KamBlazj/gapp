@@ -1,0 +1,231 @@
+$wcagButtonsBorder: solid #40a9e6 2px;
+$moduleFontFamily:'roboto';
+$modulePopupMarginLeft:50px;
+$moduleAndPopupColor:#121212;
+$moduleAndPopupFontStyle:normal;
+$modulePointerCursor:pointer;
+$wcagBorder:solid black 2px;
+$regularZIndex:1;
+@media only screen and (max-width: 599px) {
+    .rightDiv
+    {
+        padding-left:10px;
+        min-height:1px;
+        float:none;
+    }
+    .leftDiv
+    {
+        padding-left:10px;
+        min-height:1px;
+        float:none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .rightDiv
+    {
+        padding-left: 5px;
+        min-height:1px;
+        float:left;
+    }
+    .leftDiv
+    {
+        padding-left: 5px;
+        min-height:1px;
+        float:left;
+    }
+}
+#container
+{
+    width:1440px;
+    margin:0 auto;
+}
+.module
+{
+    margin-bottom:10px;
+}
+.module .mainTextP
+{
+    font-family: $moduleFontFamily;
+    font-style: $moduleAndPopupFontStyle;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: $moduleAndPopupColor;
+}
+.module .textP
+{
+    font-family: $moduleFontFamily;
+    font-style: $moduleAndPopupFontStyle;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $moduleAndPopupColor;
+}
+.module .moduleButton
+{
+    display: inline-block;
+    cursor:pointer;
+    color:white;
+    padding: 16px 40px;
+    gap: 10px;
+    background-color: #E4C1AE;
+    border-radius: 32px;
+}
+.module2 .moduleButton
+{
+    display: inline-block;
+    cursor:pointer;
+    color:white;
+    padding: 16px 40px;
+    gap: 10px;
+    background-color: #234567;
+    border-radius: 32px;
+}
+.moduleShade
+{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: #121212;
+    opacity: 0.5;
+    z-index:$regularZIndex+1;
+}
+.modulePopup
+{
+    position:fixed;
+    
+    font-family: $moduleFontFamily;
+    font-style: $moduleAndPopupFontStyle;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    background-color:white;
+    color: $moduleAndPopupColor;
+    z-index:$regularZIndex+2;
+}
+@media only screen and (max-width: 599px) {
+    .modulePopup
+    {
+        width: 60%;
+        height: 40%;
+        min-height:250px;
+        left: 20%;
+        top: 25%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .modulePopup
+    {
+        width: 40%;
+        height: 20%;
+        min-height:250px;
+        left: 30%;
+        top: 35%;
+    }
+}
+.modulePopup .modulePopupAlert
+{
+    width: 380px;
+    height: 50px;
+    margin-top:30px;
+    margin-left:$modulePopupMarginLeft;
+    font-family: $moduleFontFamily;
+    font-style: $moduleAndPopupFontStyle;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 120%;
+    color: $moduleAndPopupColor;
+}
+.modulePopup .modulePopupMsg
+{
+    margin-left:$modulePopupMarginLeft;
+    font-family: $moduleFontFamily;
+    font-style: $moduleAndPopupFontStyle;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    color: $moduleAndPopupColor;
+}
+.modulePopup .absolute
+{
+    position:absolute;
+    width:100%;
+}
+.modulePopup .modulePopupClose
+{
+    cursor:$modulePointerCursor;
+    font-weight:bold;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.modulePopup .moduleButton
+{
+    margin-left:$modulePopupMarginLeft;
+    display: inline-block;
+    cursor:$modulePointerCursor;
+    color:white;
+    padding: 16px 40px;
+    gap: 10px;
+    background-color: #E4C1AE;
+    border-radius: 32px;
+}
+.module .clear
+{
+    clear:both;
+}
+.wcagMain
+{
+    position:fixed;
+    top:0;
+    right:0;
+    width:80px;
+    height:50px;
+    border:$wcagBorder;
+    color:blue;
+    font-weight:700;
+    line-height:50px;
+    text-align:center;
+    cursor:$modulePointerCursor;
+    z-index:$regularZIndex;
+    background:white;
+}
+.wcagPanel
+{
+    position:fixed;
+    top:0;
+    right:0;
+    width:150px;
+    height:400px;
+    border:$wcagBorder;
+    display:none;
+    z-index:$regularZIndex;
+    background:white;
+}
+.wcagClose
+{
+    cursor:$modulePointerCursor;
+    border:$wcagBorder;
+    color:blue;
+    font-weight:700;
+    text-align:center;
+}
+.wcagButton
+{
+    cursor:$modulePointerCursor;
+    border:$wcagButtonsBorder;
+}
+.wcagButton:hover
+{
+    cursor:$modulePointerCursor;
+    border:$wcagButtonsBorder;
+    background:#bac9d1;
+}
+.wcagButtonSet
+{
+    cursor:default;
+    border:$wcagButtonsBorder;
+    background:#fcba03;
+}

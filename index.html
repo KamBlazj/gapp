@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="src/js/main.js"></script>
+    <link rel="stylesheet" href="src/css/main.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Błażej Kamiński - Recruitment task</title>
+</head>
+<body>
+    <div id="container"></div>
+    <div id="container2" style="width:500px; margin:0 auto;">
+</body>
+<script>
+(function() {
+    const wcag = Object.create(Wcag);
+    wcag.Start(document.body);
+    const containerDiv = document.getElementById("container");
+    const container2Div = document.getElementById("container2");
+    const module = Object.create(Module);
+    const textModule ="Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.";
+    module.Start(containerDiv,"","sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh", "Lorem Ipsum", textModule, "Button", 0, wcag);
+    const module2 = Object.create(Module);
+    module2.Start(containerDiv,"module2","sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh", "Lorem Ipsum 2", textModule, "Button", 1, wcag);
+    const module3 = Object.create(Module);
+    module3.Start(container2Div,"","sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh", "Lorem Ipsum 3", "Scalable CSS feature-rich", "Button", 2, wcag);
+    wcag.CheckLoad();
+    
+
+ })();
+    
+</script>
